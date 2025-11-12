@@ -46,6 +46,21 @@ class PvpController extends Controller {
 
         return PvpProjection::instance()->loaded($player);
     }
+	
+	#[Request(
+        endpoint: '/cf-loadfriend.asp',
+        inputType: Input::NINJA2,
+        outputType: Output::XML
+    )]
+    public function loadfriend(\SimpleXMLElement $input): \SimpleXMLElement {
+        $player = $this->pvpService->loadChar((int)$input->intPVPCharID);
+        if ($player == null)
+        {
+            return new \SimpleXMLElement('<?xml version="1.0" encoding="UTF-8"?><PvPChar xmlns:sql="urn:schemas-microsoft-com:xml-sql"/>');
+        }
+
+        return PvpProjection::instance()->loaded($player);
+    }
 
     #[Request(
         endpoint: '/cf-loadpvpdragon.asp',
