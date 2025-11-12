@@ -22,5 +22,53 @@
         "type": 2,
         "itemId": 1594,
         "amount": 1
+	},
+    {
+        "id": 44,
+        "index": 7,
+        "value": 15,
+        "type": 2,
+        "itemId": 1131,
+        "amount": 1
+	},
+    {
+        "id": 59,
+        "index": 10,
+        "value": 15,
+        "type": 2,
+        "itemId": 1419,
+        "amount": 3
+	},
+    {
+        "id": 90,
+        "index": 12,
+        "value": 15,
+        "type": 2,
+        "itemId": 1594,
+        "amount": 1
+	},
+    {
+        "id": 105,
+        "index": 9,
+        "value": 15,
+        "type": 2,
+        "itemId": 1594,
+        "amount": 1
+	},
+    {
+        "id": 120,
+        "index": 15,
+        "value": 15,
+        "type": 2,
+        "itemId": 1773,
+        "amount": 1
+	},
+    {
+        "id": 152,
+        "index": 17,
+        "value": 15,
+        "type": 2,
+        "itemId": 2279,
+        "amount": 1
 	}
 ]
